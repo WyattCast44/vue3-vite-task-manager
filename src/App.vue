@@ -19,9 +19,8 @@ import AddTaskDrawer from './components/AddTaskDrawer.vue'
 </script>
 
 <script>
-
 export default {
-    
+
     data() {
         return {
             tasks: [
@@ -55,5 +54,6 @@ export default {
             })
         }
     }
+    
 }
 </script>
