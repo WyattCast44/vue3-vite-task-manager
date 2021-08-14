@@ -24,7 +24,14 @@ export default {
     },
     methods: {
         emitTaskAdded() {
+            
+            if(this.task.body.trim() == "") {
+                this.task.body = ""
+                return;
+            }
+
             this.$emit('task-added', this.task.body, this.task.date)
+
             this.task = {}
         }
     }  
